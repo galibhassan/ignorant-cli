@@ -1,0 +1,26 @@
+{
+  "name": "ignorant-cli",
+  "version": "1.0.0",
+  "description": "A CLI for the Ignorant people to scaffold minimal but powerful es6 projects",
+  "scripts": {},
+  "author": "Galib Hassan",
+  "keywords": [
+    "ES6",
+    "CLI",
+    "JavaScript",
+    "Command Line Interface",
+    "Scaffolding"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^3.0.2",
+    "connectivity": "^1.0.2",
+    "fs-extra": "^8.1.0",
+    "replace": "^1.1.1"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "ignorant": "./bin.js"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        <your-project-name>
+    </title>
+</head>
+
+<body>
+    <h1>Ignorant CLI</h1>
+    <hr>
+    An ES6 project creator for ignorant people
+
+    <br>
+    <br>
+
+    <p>
+        <em>
+            Feel free to edit this page and give a thumbs up if you like!
+            <br>
+            github link: <a href="https://github.com/galibhassan/ignorent-cli"> https://github.com/galibhassan/ignorent-cli</a>
+        </em>
+    </p>
+
+    <h3>What just happened</h3>
+    <p>
+        Open <code> console </code> in debugging tool of your browser (usually by pressing <kbd> Ctrl +Shft+I </kbd>).
+        You should see the following messages:
+
+        <pre>
+            Hello from MyES6Class constructor!          myES6Class.js:3
+            Hello ignorant!                             myES6Class.js:7
+            Hello from the static function!             myES6Class.js:11
+            [WDS] Live Reloading enabled.               client:52
+        </pre>
+
+        <ul>
+            <li>The first message comes from the <code>constructor</code> of the ES6 class that is created in the path
+                <kbd>./src/myES6Class.js</kbd></li>
+            <li>The second one comes from its <code>greet()</code> method.</li>
+            <li>The third message is due to its static function <code>myStaticFunction()</code></li>
+            <li>The fourth message can be ignored (since we are ignorant &#x1F60E;). It is coming from
+                <code>Webpack Development Server</code>.</li>
+        </ul>
+        All of these got wired-up in <code>./src/index.js</code> which creates an instance of the previously mentioned
+        class and plays around.
+    </p>
+
+    <h3>Live reloading</h3>
+    Already enabled (as the fourth messaged indicated). Tweek some codes in the files of <code>./src</code> folder and you should see the changes (almost)
+    instanteniously.
+
+    <h3>Styling</h3>
+    Notice that the styling for this page lives in <code>./src/style.css</code> file which is imported in the
+    <code>./src/index.js</code> file using an ES6 <code>import</code> syntax. This ignorable magic happens because of
+    a webpack loader. Edit <code>./webpack.config.js</code> if you know what you are doing.
+
+    <h3>Debugging</h3>
+    Open Debugging tool of your browser, press <kbd>Ctrl+p</kbd>, type the name of your source file and press
+    <kbd>Enter</kbd>. An exact replica of your source file should be visible in the <code>Sources</code> tab of the
+    debugger. Set break points and you know how to debug the hell out of it. Agian, this ignorable magic happens because
+    of the
+    line, <code>devtool: 'source-map'</code> in <code>webpack.config.js</code>
+
+</body>
+
+</html>
